@@ -1,0 +1,33 @@
+This program is a linked list application developed in C to manage species information. It allows users to add, modify, delete, sort, and display biological classification information (class, order, family, genus, species).
+
+node: Each node is a structure containing species information (class, order, family, genus, species) and a pointer (next) to the next node.
+
+node* create_node():
+Creates a new node and sets the next pointer to NULL
+
+int return_criteria():
+Prompts the user to enter a sorting criterion (class, order, family, genus, species) and returns the corresponding enum value.
+
+void displayMenu():
+Displays the menu options to the user.
+
+void print_lli(node* lli):
+Prints all species information in the linked list.
+
+void add_node_lli(node** lli):
+Prompts the user for species information, creates a new node, and adds it to the list.
+
+void delete_node_lli(node** lli):
+Deletes a node from the list based on the species name provided by the user.
+
+void modify_node_lli(node* lli):
+Finds the node with the species name provided by the user and updates its information.
+
+void swap(node* a, node* b):
+Swaps the information between two nodes.
+
+void sort_species(node** lli, Criteria criteria):
+Sorts the linked list based on the given criterion (using the bubble sort algorithm).
+
+void freeList(node* lli):
+Frees all nodes in the linked list and cleans up memory.
