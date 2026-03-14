@@ -1,0 +1,26 @@
+CustomDict* create_dict():
+I used this function to create dictionary.
+
+int read_csv(CustomDict *dict, const char *filename):
+I used this function to read a CSV file and populate the CustomDict. I used the strtok function to split the data into parts according to the keys.
+
+void add_item(CustomDict *dict, char *key, Value *values, char type):
+I used this function to add new values. First, I checked if the key exists. If the key exists, I read and added the value according to the type. If the key does not exist, I created a new key and read and filled it according to the type.
+
+void delete_item(CustomDict* dict, char* key):
+I used this function to delete an item from CustomDict. First, I checked the key. Then, I freed the found key using free. Finally, I shifted the subsequent items one position back to completely remove the empty item.
+
+void print_dict(CustomDict *dict):
+I used this function to print the CustomDict. While printing, I checked the type and selected the value accordingly.
+
+Value* search_item(CustomDict *dict, char *key):
+I used this function to find the values associated with a specific key. I used the strcmp function to find the key and returned the value with return.
+
+void set_value(CustomDict *dict, Value *values, char *key):
+In this function, I first found the given key, then reset its content, and entered new values.
+
+void sort_dict(CustomDict *dict):
+In this function, I sorted all keys alphabetically.
+
+void free_dict(CustomDict *dict):
+In this function, I cleaned up all the allocated memory.
